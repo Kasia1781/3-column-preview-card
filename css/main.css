@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: white;
+}
+
+.cards {
+  width: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cards .card {
+  position: relative;
+  padding: 40px;
+  height: 450px;
+}
+.cards .card .title {
+  text-transform: uppercase;
+  padding: 20px 0;
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display";
+  font-size: 3.2rem;
+}
+.cards .card .text {
+  font-size: 1.5rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 25px;
+}
+.cards .card .btn {
+  position: absolute;
+  font-weight: bold;
+  bottom: 30px;
+  padding: 1.5rem 4rem;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(0deg, 0%, 95%);
+  cursor: pointer;
+}
+.cards .card .one {
+  color: hsl(31deg, 77%, 52%);
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.cards .card .one:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  border: 1px solid white;
+  color: white;
+}
+.cards .card .two {
+  color: hsl(184deg, 100%, 22%);
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.cards .card .two:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  border: 1px solid white;
+  color: white;
+}
+.cards .card .three {
+  color: hsl(179deg, 100%, 13%);
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.cards .card .three:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  border: 1px solid white;
+  color: white;
+}
+
+.sedans {
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .cards {
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 920px;
+  }
+}/*# sourceMappingURL=main.css.map */
