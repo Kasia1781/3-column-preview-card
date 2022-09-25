@@ -20,7 +20,8 @@ body {
 }
 
 .cards {
-  width: 320px;
+  max-width: 350px;
+  padding: 5px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -91,16 +92,11 @@ body {
   background-color: hsl(179deg, 100%, 13%);
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
-  .cards {
-    width: 350px;
-  }
-}
 @media (min-width: 768px) {
   .cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 920px;
+    max-width: 920px;
   }
 }/*# sourceMappingURL=main.css.map */
